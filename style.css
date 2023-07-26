@@ -7,12 +7,13 @@
 }
 
 .game-board{
-    width: 80%;
-    height: 600px;
-    border: 5px solid black;
+    width: 100%;
+    height: 100vh;
+    border-bottom: 10px solid green;
     margin: auto;
     position: relative;
     overflow: hidden;
+    background-image: linear-gradient(#87CEEB, #E0F6FF);
 }
 
 /*AÇÃO DO PIPE (TUBO)*/
@@ -21,7 +22,7 @@
     position: absolute;
     bottom: 0;
     height: 110px; /*TAMANHO DO TUBO*/
-    animation: pipe 1.5s linear infinite; /*AQUI DEFINE A VELOCIDADE DO JOGO */
+    animation: pipe 1.2s linear infinite; /*AQUI DEFINE A VELOCIDADE DO JOGO */
 }
 
 @keyframes pipe{
@@ -68,5 +69,22 @@
 
     100%{
         bottom:0px
+    }
+}
+
+.clouds{
+    width: 600px;
+    height: 200px;
+    position: absolute;
+    animation: clouds 15s linear infinite ;
+}
+
+@keyframes clouds{
+    0%{
+        right: -600px;
+    }
+
+    100%{
+        right: 100%;
     }
 }
