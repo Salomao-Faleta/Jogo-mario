@@ -1,0 +1,72 @@
+@charset "UTF-8";
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.game-board{
+    width: 80%;
+    height: 600px;
+    border: 5px solid black;
+    margin: auto;
+    position: relative;
+    overflow: hidden;
+}
+
+/*AÇÃO DO PIPE (TUBO)*/
+
+.pipe{
+    position: absolute;
+    bottom: 0;
+    height: 110px; /*TAMANHO DO TUBO*/
+    animation: pipe 1.5s linear infinite; /*AQUI DEFINE A VELOCIDADE DO JOGO */
+}
+
+@keyframes pipe{
+    0%{
+        right: -80px;
+    }
+
+    100%{
+        right: 100%
+    }
+}
+
+
+
+/*AÇÃO DO MÁRIO*/
+
+.mario{
+    position: absolute;
+    bottom: 0px; /*AQUI DEFINE A ALTURA DO PULO DO MÁRIO*/
+    width: 200px;
+    height: 260px;
+}
+
+.jump{
+    animation: jump 500ms linear;
+}
+
+@keyframes jump{
+    0%{
+        bottom: 0px
+    }
+
+    25%{
+        bottom: 150px;
+    }
+
+    50%{
+        bottom: 180px;
+    }
+
+    75%{
+        bottom: 150px;
+    }
+
+    100%{
+        bottom:0px
+    }
+}
