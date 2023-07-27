@@ -18,10 +18,9 @@ const loop = setInterval(()=>{
     const marioPosition = +window.getComputedStyle(mario).bottom.replace('px', ''); // (+) transforma o texto em número
     const cloudsPosiiton = +window.getComputedStyle(clouds).right.replace('px', '');;
 
-    // console.log(cloudsPosiiton)
 
 
-    if(pipePosition <= 165 && pipePosition > 0 &&marioPosition < 100){
+    if(pipePosition <= 165 && pipePosition > 0 && marioPosition < 100){
         pipe.style.animation = 'nome';
         pipe.style.left = `${pipePosition}px`;
 
@@ -32,17 +31,13 @@ const loop = setInterval(()=>{
         mario.style.height = '200px';
         mario.style.marginLeft = '80px';
 
-        clouds.style.animation = 'nome';
-        clouds.style.right = `${cloudsPosiiton}px`
 
+
+        clouds.style.animation = 'nome';
+        clouds.style.right = `${cloudsPosiiton}px`;
 
         clearInterval(loop);
-        alert('Atualize a tela para jogar novamente ;)')
     }
-
-
-
-
 
 }, 10)
 
