@@ -22,7 +22,7 @@
     position: absolute;
     bottom: 0;
     height: 110px; /*TAMANHO DO TUBO*/
-    animation: pipe 1.2s linear infinite; /*AQUI DEFINE A VELOCIDADE DO JOGO */
+    animation: pipe 1.0s linear infinite; /*AQUI DEFINE A VELOCIDADE DO JOGO */
 }
 
 @keyframes pipe{
