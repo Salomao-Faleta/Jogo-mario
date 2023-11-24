@@ -6,6 +6,50 @@
     box-sizing: border-box;
 }
 
+.modal{
+    display: none;
+    width: 40%;
+    height: 40%;
+    position: absolute;
+    background-color: rgba(0,0,0, 0.2);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 2rem;
+}
+
+.modal h2{
+    text-align: center;
+    text-transform: uppercase;
+    padding: 20px 0px;
+    color: rgba(255, 0, 0, 0.67);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.modal .fecharModal{
+    position: 100;
+    right: 20px;
+    top: 20px;
+    position: absolute;
+    cursor: pointer;
+    color: rgba(255, 0, 0, 0.67);
+    font-size: 20px;
+}
+.modal button{
+    width: 150px;
+    height: 90px;
+    position: absolute;
+    background-image: linear-gradient(#87CEEB, #E0F6FF);
+    outline: none;
+    border: 1px solid #000;
+    font-weight: bolder;
+    border-radius: 0.4rem;
+    top: 50%;
+    cursor: pointer;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
 .game-board{
     width: 100%;
     height: 100vh;
